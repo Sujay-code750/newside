@@ -1,0 +1,16 @@
+
+
+
+/* banner bottom section */
+.bannerBottomImg{
+    background: url("https://www.witherspoonpartners.com/wp-content/themes/witherspoon_bootstrap/images/Witherspoon-street-sign-1200a.jpg") no-repeat 0 51%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* middle section */
+
+.middleSection h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}

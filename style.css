@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe_ui';
+}
+.row{
+    align-items: center !important;
+}
+img{
+    max-width: 100%;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+span, strong{
+    display: inline-block;
+}
+html,body{
+    overflow-x: hidden !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+    color: #087f6a ;
+    font-weight: 400;
+}
+p,span{
+    font-family: 'segoe_ui';
+    color: #343a40;
+    line-height: 1.5;
+}
+.container{
+    width: 1140px;
+    flex: 0 0 auto;
+}
+:root{
+    --font-segoe_ui: 'segoe_ui';
+    --font-Playfair: "Playfair Display", serif;
+    --color-000000: #000000 !important;
+    --color-ffffff: #fff!important;
+    --color-f8f9fa: #f8f9fa !important;
+    --color-063: #063 !important;
+    --color-087f6a : #087f6a  !important;
+    --color-343a40 : #343a40  !important;
+    --color-054f42 : #054f42  !important;
+    --color-c15b2c : #c15b2c  !important;
+    --color-d6764a  : #d6764a  !important;
+    --sec-padding: 40px 15px;
+}
+
+
+
+/* header section */
+
+.headerSection{
+    background-color: var(--color-f8f9fa) !important;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #063;
+    z-index: 99;
+}
+.headerLeft img{
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+}
+.headerRight ul{
+    display: flex;
+    justify-content: end;
+}
+.headerRight ul li a{
+    color: var(--color-063);
+    padding: 8px;
+}
+.headerRight ul li a span{
+    color: var(--color-063) !important;
+}
+
+
+/* banner bottom img */
+
+.bannerBottomImg{
+    background: url(https://www.witherspoonpartners.com/wp-content/uploads/2019/01/bridge.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--color-ffffff);
+    height: 100%;
+    width: 100%;
+}
+.bannerBottomImg .imageContant{
+    height: 500px;
+    width: 100%;
+}
+
+
+/* aligning section */
+
+.aligningSection{
+    padding: var(--sec-padding);
+}
+.aligningSection .left h2{
+    font-size: 40px; 
+    text-align: center;
+    margin-bottom: 15px;
+}
+.aligningSection .left p{
+    font-size: 20px;
+}
+.aligningSection .right img{
+    height: auto;
+}
+
+/* video section */
+
+.videoSection{
+    background: url(https://www.witherspoonpartners.com/wp-content/uploads/2019/01/sky-texture-2.jpg) no-repeat top center;
+    background-size: cover;
+    padding: var(--sec-padding);
+}
+.videoSection .right h3{
+    font-size: 22px;
+    color: var(--color-063);
+}
+.ytp-cued-thumbnail-overlay-image {
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50% !important;
+    position: absolute;
+}
+
+
+
+/* Capabilities section */
+
+.capabilitiesSection{
+    padding: var(--sec-padding);
+}
+.capabilitiesSection .topHeader{
+    width: 63%;
+    margin: auto;
+}
+.capabilitiesSection .topHeader h2{
+    font-size: 40px;
+}
+.capabilitiesSection .item {
+    height: 330px;
+    width: 100%;
+}
+.capabilitiesSection .item h3{
+    color: var(--color-054f42);
+}
+
+
+
+/* Capabilities section bottom */
+
+.capabilitiesSectionBottom .image{
+    background: url(https://www.witherspoonpartners.com/wp-content/uploads/2019/01/japanese-maple-1.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    /* padding: 200px 0; */
+    object-fit: cover;
+    /* position: fixed; */
+}
+
+/* team section */
+
+.teamSection{
+    padding: var(--sec-padding);
+}
+.teamSection h2{
+    font-size: 40px;
+    margin: 0;
+}
+.teamSection .items{
+    margin: 20px 0;
+}
+.teamSection .item .image {
+    width: calc(100% + 30px)
+}
+
+.teamSection .item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.teamSection img {
+    filter: brightness(130%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    transform: translate3d(-10px, 0, 0);
+    transition: .6s;
+}
+
+.teamSection .item:hover img {
+    transform: translate3d(0px, 0, 0);
+}
+.teamSection .item .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5, 79, 66, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all .2s;
+    z-index: 10;
+    opacity: 0;
+}
+.teamSection .item:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.teamSection .item .imageHover{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 20;
+}
+.teamSection .item h3{
+    color: #d6ba3a;
+    transform: translate(0, 180px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+.teamSection .item:hover h3{
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+}
+.teamSection .item h4{
+    color: var(--color-ffffff);
+    transform: translate(0, 180px);
+    visibility: hidden;
+    opacity: 0;
+    font-family: var(--font-segoe_ui);
+    font-weight: 500;
+    transition: all .6s;
+}
+.teamSection .item:hover h4{
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* witherspoon Section */
+.witherspoonSection{
+    padding: var(--sec-padding);
+    background: url(https://www.witherspoonpartners.com/wp-content/uploads/2019/01/corn-field-1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.witherspoonSection .text{
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    width: 68%;
+    margin: auto;
+    border-radius: 10px;
+}
+.witherspoonSection .text h2{
+    text-align: center;
+    font-size: 40px;
+}
+.witherspoonSection .text p{
+    margin: 0;
+}
+
+/*  news section */
+.newsSection{
+    padding: var(--sec-padding);
+}
+.newsSection .topHeader h2{
+    font-size: 40px;
+}
+.newsSection .item h3 a{
+    font-family: var(--font-Playfair) !important;
+    color: var(--color-063);
+    font-size: 21px;
+    transition: .2s;
+}
+.newsSection .item h3 a:hover{
+    text-decoration: underline;
+}
+.newsSection .item a span{
+    color: var(--color-ffffff);
+    background-color: var(--color-054f42);
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    line-height: 1.25;
+    border: 1px solid transparent;
+    transition: .2s;
+}
+.newsSection .item a span:hover{
+    background-color: #032b24;
+    border: 1px solid #021f1a;
+}
+.defultBtn a span{
+    color: var(--color-ffffff);
+    background-color: var(--color-c15b2c);
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    transition: .2s;
+}
+.defultBtn a span:hover{
+    background-color: #a24c25;
+    border: 1px solid #974723;
+}
+
+
+/* newsBottom Section */
+.newsBottomSection{
+    padding: var(--sec-padding);
+    padding-bottom: 0;
+    background: url(https://www.witherspoonpartners.com/wp-content/uploads/2019/01/old-paper-600.jpg) no-repeat center center;
+    background-size: cover;
+    object-fit: contain;
+
+}
+.newsBottomSection h1{
+    font-size: 40px;
+    color: #332c21 !important;
+}
+.newsBottomSection strong{
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+
+
+/* footer section */
+.footerSection{
+    padding: var(--sec-padding);
+    background-color: #495057 ;
+    border-top: 3px solid #087f6a;
+    color: #fff !important;
+}
+.footerSection h3{
+    color: var(--color-d6764a);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.footerSection .item ul{
+    list-style: disc;
+    margin-left: 40px;
+}
+.footerSection .item ul li a span{
+    transition: .2s;
+}
+.footerSection .item ul li a span:hover{
+   text-decoration: underline;
+}
+.footerSection .item ul li a span,.footerSection .item p,.footerSection .item a{
+    color: var(--color-ffffff);
+}
+.footerSection .item p.first{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.footerSection .item a{
+    transition: .2s;
+}
+.footerSection .item a:hover{
+    text-decoration: underline;
+}
+.footerSection .item input, textarea{
+    padding: 8px 12px;
+    color: #495057;
+    background-color: var(--color-ffffff);
+    line-height: 1.25;
+    width: 100%;
+    border: none;
+    display: block;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    transition: 0.15s;
+}
+.footerSection .item input, textarea:focus{
+    border-color: #0dc7a6;
+}
+.footerSection .row{
+    align-items: start !important;
+}
+.footerSection .item button{
+    padding: 4px 8px;
+    color: var(--color-ffffff);
+    background-color: #086B40;
+    border: 1px solid var(--color-ffffff);
+    border-radius: 2px;
+    font-size: 14px;
+    transition: .2s;
+}
+.footerSection .item button:hover{
+    background-color: #05472b;
+}
+
+
+/* .page footer */
+.mainTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: var(--color-ffffff);
+    background-color: #086B40;
+    border: 1.5px solid var(--color-ffffff);
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.mainTop a i, .mainTop a{
+    color: var(--color-ffffff);
+}

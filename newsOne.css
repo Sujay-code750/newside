@@ -1,0 +1,62 @@
+
+/* global */
+
+:root{
+    --color-00b359: #00b359 !important; 
+}
+
+
+
+/* banner bottom section */
+.bannerBottomImg{
+    background: url(https://www.witherspoonpartners.com/wp-content/themes/witherspoon_bootstrap/images/iStock-157507658.jpg) no-repeat 0 56%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+/* middle Section */
+
+.middleSection .container{
+    padding: var(--sec-padding);
+    padding-bottom: 0;
+}
+.middleSection .breadcrumb{
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+}
+.middleSection a{
+    color: var(--color-00b359);
+    transition: .2s;
+}
+.middleSection a:hover{
+    color: var(--color-c15b2c);
+}
+.middleSection .breadcrumb span{
+    margin: 0 10px;
+}
+.middleSection h5 a{
+    font-family: var(--font-Playfair);
+    color: var(--color-063);
+}
+
+
+.middleSection article .image{
+    width: 300px;
+    float: right;
+    margin: 15px;
+}
+.middleSection article .video{
+    width: 50%;
+    float: right;
+    margin: 10px;
+}
+.middleSection article a:hover{
+    text-decoration: underline;
+}
+.middleSection article h1{
+    margin-bottom: 16px;
+}
+.middleSection article strong{
+    margin-bottom: 16px;
+}
